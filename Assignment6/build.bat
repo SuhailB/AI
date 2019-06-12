@@ -1,0 +1,2 @@
+echo "Compiling..."
+javac *.java

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Configuration">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="RazorParking"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/RazorParking"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="Permit Type"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/Permit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentLeft="true">
+
+        <RadioButton
+            android:id="@+id/reserved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/reserved" />
+
+        <RadioButton
+            android:id="@+id/faculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faculty" />
+
+        <RadioButton
+            android:id="@+id/resident"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resident" />
+
+        <RadioButton
+            android:id="@+id/student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student" />
+
+        <RadioButton
+            android:id="@+id/noPermit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_permit" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Time"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/SevenToFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:text="@string/_7am_5pm"/>
+
+    <CheckBox
+        android:id="@+id/FivetoEight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/SevenToFive"
+        android:text="@string/_5pm_8pm"/>
+
+
+    <CheckBox
+        android:id="@+id/EighttoThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/FivetoEight"
+        android:text="@string/_8pm_3am" />
+
+    <CheckBox
+        android:id="@+id/ThreetoSeven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/EighttoThree"
+        android:text="@string/_3am_7am" />
+
+    <CheckBox
+        android:id="@+id/currentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ThreetoSeven"
+        android:text="@string/current_time" />
+
+    <Button
+        android:id="@+id/LoadParkingSpots"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:elevation="15dp"
+        android:text="@string/load_parking_spots" />
+
+    <TextView
+        android:id="@+id/seeTime"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/Permit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/Permit"
+        android:layout_alignTop="@+id/LoadParkingSpots"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/time" />
+
+
+
+
+</RelativeLayout>
